@@ -1,0 +1,1825 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* .fade-enter-active,
+.fade-leave-active,
+.layout-enter-active,
+.layout-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+} */
+
+.slide-fade-enter-active,
+.layout-enter-active {
+  transition: all 0.3s ease;
+}
+.slide-fade-leave-active,
+.layout-leave-active {
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateX(10px);
+  opacity: 0;
+}
+
+/* Colors Classes */
+
+/* The Clue Black */
+
+.the-clue-black-opacity {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.the-clue-black,
+.the-clue-hover-black:hover {
+  color: #fff !important;
+  background-color: #161616 !important;
+}
+
+.the-clue-text-black,
+.the-clue-text-hover-black:hover {
+  color: #161616 !important;
+}
+
+.the-clue-gray,
+.the-clue-hover-gray:hover {
+  color: #fff !important;
+  background-color: #a2a2a2 !important;
+}
+
+.the-clue-light-gray,
+.the-clue-hover-light-gray:hover {
+  color: #fff !important;
+  background-color: #cbcbcb !important;
+}
+
+.the-clue-text-light-gray,
+.the-clue-text-hover-light-gray:hover {
+  color: #cbcbcb !important;
+}
+
+.the-clue-middle-gray,
+.the-clue-hover-middle-gray:hover {
+  color: #fff !important;
+  background-color: #c0c0c0 !important;
+}
+
+.the-clue-text-middle-gray,
+.the-clue-text-hover-middle-gray:hover {
+  color: #c0c0c0 !important;
+}
+
+.the-clue-text-gray,
+.the-clue-text-hover-gray:hover {
+  color: #a2a2a2 !important;
+}
+
+.the-clue-dark-gray,
+.the-clue-hover-dark-gray:hover {
+  background-color: #484848 !important;
+}
+
+.the-clue-transparent-background {
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+
+.the-clue-text-dark-gray,
+.the-clue-text-hover-dark-gray:hover {
+  color: #484848 !important;
+}
+
+.the-clue-yellow,
+.the-clue-hover-yellow:hover {
+  background-color: #fff000 !important;
+}
+
+.the-clue-text-yellow,
+.the-clue-text-hover-yellow:hover {
+  color: #fff000 !important;
+}
+
+.the-clue-red,
+.the-clue-hover-red:hover {
+  background-color: #721c24 !important;
+}
+
+.the-clue-text-red,
+.the-clue-text-hover-red:hover {
+  color: #721c24 !important;
+}
+
+/* Font */
+
+.the-clue-font-24 {
+  font-size: 24px;
+}
+
+.the-clue-font-22 {
+  font-size: 22px;
+}
+
+.the-clue-font-20 {
+  font-size: 20px;
+}
+
+.the-clue-font-19 {
+  font-size: 19px;
+}
+
+.the-clue-font-18 {
+  font-size: 18px;
+}
+
+.the-clue-font-17 {
+  font-size: 17px;
+}
+
+.the-clue-font-16 {
+  font-size: 16px;
+}
+
+.the-clue-font-15 {
+  font-size: 15px;
+}
+
+.the-clue-font-14 {
+  font-size: 14px;
+}
+
+.the-clue-font-12 {
+  font-size: 12px;
+}
+
+.the-clue-font-10 {
+  font-size: 10px;
+}
+
+.the-clue-weight-500 {
+  font-weight: 500;
+}
+
+.the-clue-line-height {
+  line-height: 1.94;
+}
+
+/* Other Utilities */
+
+.the-clue-underline-text-non-hover:hover {
+  text-decoration: none;
+}
+
+.the-clue-underline-text {
+  text-decoration: underline;
+}
+
+.the-clue-underline-text-yellow {
+  text-decoration: underline;
+  text-decoration-color: #fff000;
+}
+
+.the-clue-underline-text-yellow:hover {
+  text-decoration: underline;
+  text-decoration-color: #fff000;
+}
+
+.the-clue-underline-text-gray-yellow {
+  text-decoration: underline;
+  text-decoration-color: #161616;
+}
+
+.the-clue-hover-underline-text-yellow:hover {
+  text-decoration: underline;
+  text-decoration-color: #fff000;
+}
+
+.the-clue-underline-text-gray-yellow:hover {
+  text-decoration: underline;
+  text-decoration-color: #fff000;
+}
+
+.the-clue-underline-text-white-yellow {
+  text-decoration: underline;
+  text-decoration-color: #ffffff;
+}
+
+.the-clue-underline-text-white-yellow:hover {
+  text-decoration: underline;
+  text-decoration-color: #fff000;
+}
+
+.the-clue-relative {
+  position: relative;
+}
+
+.the-clue-absolute {
+  position: absolute;
+}
+
+.ml-100 {
+  margin-left: 22rem !important;
+}
+
+.mr-100 {
+  margin-right: 22rem !important;
+}
+
+.ml-12 {
+  margin-left: 7rem !important;
+}
+
+.mr-12 {
+  margin-right: 7rem !important;
+}
+
+.ml-10 {
+  margin-left: 6rem !important;
+}
+
+.mr-10 {
+  margin-right: 6rem !important;
+}
+
+.ml-8 {
+  margin-left: 5rem !important;
+}
+
+.mr-8 {
+  margin-right: 5rem !important;
+}
+
+.mt-8 {
+  margin-top: 5rem !important;
+}
+
+.mb-8 {
+  margin-bottom: 5rem !important;
+}
+
+.mt-6 {
+  margin-top: 3.85rem !important;
+}
+
+.mb-6 {
+  margin-bottom: 3.85rem !important;
+}
+
+.mt-5-explore {
+  margin-top: 2.4rem !important;
+}
+
+.mt-4- {
+  margin-top: 2.9rem !important;
+}
+
+.pl-10 {
+  padding-left: 6rem !important;
+}
+
+.pr-10 {
+  padding-right: 6rem !important;
+}
+
+.pl-8 {
+  padding-left: 5rem !important;
+}
+
+.pr-8 {
+  padding-right: 5rem !important;
+}
+
+.margin-left-footer-1 {
+  margin-left: 17vw !important;
+}
+
+.the-clue-width-50vw {
+  width: 50vw;
+}
+
+.the-clue-width-75vw {
+  width: 75vw;
+}
+
+.the-clue-pointer-hover:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 992px) {
+  .the-clue-show-small {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .the-clue-hide-small {
+    display: none !important;
+  }
+}
+
+.the-clue-rotate-minuse-90 {
+  transform: rotate(-90deg);
+}
+
+/* Effects and Animations */
+
+:root {
+  --left: 0;
+}
+
+.movement {
+  left: var(--left);
+  -webkit-transition: left 0.5s;
+  transition: left 0.5s;
+}
+
+.hoverMovement:hover {
+  --left: 20px;
+}
+
+.animation-slider1-img-left {
+  animation: slider1-img-left 1s;
+}
+
+.animation-slider1-img-left-small {
+  animation: slider1-img-left-small 1s;
+}
+
+.animation-slider2-img-left {
+  animation: slider2-img-left 1s;
+}
+
+.animation-slider1-text-left {
+  animation: slider1-text-left 1s;
+}
+
+.animation-slider1-text-left-small {
+  animation: slider1-text-left-small 1s;
+}
+
+.animation-slider2-text-left {
+  animation: slider2-text-left 1s;
+}
+
+.animation-slider1-img-right {
+  animation: slider1-img-right 1s;
+}
+
+.animation-slider1-img-right-small {
+  animation: slider1-img-right-small 1s;
+}
+
+.animation-slider2-img-right {
+  animation: slider2-img-right 1s;
+}
+
+.animation-slider1-text-right {
+  animation: slider1-text-right 1s;
+}
+
+.animation-slider1-text-right-small {
+  animation: slider1-text-right-small 1s;
+}
+
+.animation-slider2-text-right {
+  animation: slider2-text-right 1s;
+}
+
+.animation-slider1-img-in-left {
+  animation: slider1-img-in-left 1s;
+}
+
+.animation-slider1-img-in-left-small {
+  animation: slider1-img-in-left-small 1s;
+}
+
+.animation-slider2-img-in-left {
+  animation: slider2-img-in-left 1s;
+}
+
+.animation-slider1-text-in-left {
+  animation: slider1-text-in-left 1s;
+}
+
+.animation-slider1-text-in-left-small {
+  animation: slider1-text-in-left-small 1s;
+}
+
+.animation-slider2-text-in-left {
+  animation: slider2-text-in-left 1s;
+}
+
+.animation-slider1-img-in-right {
+  animation: slider1-img-in-right 1s;
+}
+
+.animation-slider1-img-in-right-small {
+  animation: slider1-img-in-right-small 1s;
+}
+
+.animation-slider2-img-in-right {
+  animation: slider2-img-in-right 1s;
+}
+
+.animation-slider1-text-in-right {
+  animation: slider1-text-in-right 1s;
+}
+
+.animation-slider1-text-in-right-small {
+  animation: slider1-text-in-right-small 1s;
+}
+
+.animation-slider2-text-in-right {
+  animation: slider2-text-in-right 1s;
+}
+
+.animation-buttons-left {
+  animation: buttons-left 1s;
+}
+
+.animation-buttons-right {
+  animation: buttons-right 1s;
+}
+
+.animation-buttons-in-left {
+  animation: buttons-in-left 1s;
+}
+
+.animation-buttons-in-right {
+  animation: buttons-in-right 1s;
+}
+
+.animation-cubic-bezier-slider-1-img {
+  animation-timing-function: cubic-bezier(1, 0.02, 0, 1);
+}
+
+.animation-cubic-bezier-slider-1-text {
+  animation-timing-function: cubic-bezier(1, 0.13, 0, 1);
+}
+
+@keyframes slider1-img-left {
+  from {
+    top: 47%;
+    left: 39.5%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  to {
+    top: 47%;
+    left: -30%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes slider1-img-left-small {
+  from {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  to {
+    top: 50%;
+    left: -50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes slider2-img-left {
+  from {
+    top: 44%;
+    left: 39.5%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  to {
+    top: 44%;
+    left: -30%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes slider1-text-left {
+  from {
+    top: 30%;
+    left: 78%;
+  }
+  to {
+    top: 30%;
+    left: -35%;
+  }
+}
+
+@keyframes slider1-text-left-small {
+  from {
+    top: -20%;
+    left: 30%;
+  }
+  to {
+    top: -20%;
+    left: -55%;
+  }
+}
+
+@keyframes slider2-text-left {
+  from {
+    top: 30%;
+    left: 85%;
+  }
+  to {
+    top: 30%;
+    left: -35%;
+  }
+}
+
+@keyframes slider1-img-right {
+  from {
+    top: 47%;
+    left: 39.5%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  to {
+    top: 47%;
+    left: 130%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes slider1-img-right-small {
+  from {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  to {
+    top: 50%;
+    left: 150%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes slider2-img-right {
+  from {
+    top: 44%;
+    left: 39.5%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  to {
+    top: 44%;
+    left: 130%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes slider1-text-right {
+  from {
+    top: 30%;
+    left: 78%;
+  }
+  to {
+    top: 30%;
+    left: 130%;
+  }
+}
+
+@keyframes slider1-text-right-small {
+  from {
+    top: -20%;
+    left: 30%;
+  }
+  to {
+    top: -20%;
+    left: 150%;
+  }
+}
+
+@keyframes slider2-text-right {
+  from {
+    top: 30%;
+    left: 85%;
+  }
+  to {
+    top: 30%;
+    left: 130%;
+  }
+}
+
+@keyframes slider1-img-in-left {
+  from {
+    top: 47%;
+    left: -30%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  to {
+    top: 47%;
+    left: 39.5%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes slider1-img-in-left-small {
+  from {
+    top: 50%;
+    left: -50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  to {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes slider2-img-in-left {
+  from {
+    top: 44%;
+    left: -30%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  to {
+    top: 44%;
+    left: 39.5%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes slider1-text-in-left {
+  from {
+    top: 30%;
+    left: -35%;
+  }
+  to {
+    top: 30%;
+    left: 78%;
+  }
+}
+
+@keyframes slider1-text-in-left-small {
+  from {
+    top: -20%;
+    left: -55%;
+  }
+  to {
+    top: -20%;
+    left: 30%;
+  }
+}
+
+@keyframes slider2-text-in-left {
+  from {
+    top: 30%;
+    left: -35%;
+  }
+  to {
+    top: 30%;
+    left: 85%;
+  }
+}
+
+@keyframes slider1-img-in-right {
+  from {
+    top: 47%;
+    left: 130%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  to {
+    top: 47%;
+    left: 39.5%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes slider1-img-in-right-small {
+  from {
+    top: 50%;
+    left: 150%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  to {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes slider2-img-in-right {
+  from {
+    top: 44%;
+    left: 130%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  to {
+    top: 44%;
+    left: 39.5%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes slider1-text-in-right {
+  from {
+    top: 30%;
+    left: 130%;
+  }
+  to {
+    top: 30%;
+    left: 78%;
+  }
+}
+
+@keyframes slider1-text-in-right-small {
+  from {
+    top: -20%;
+    left: 150%;
+  }
+  to {
+    top: -20%;
+    left: 30%;
+  }
+}
+
+@keyframes slider2-text-in-right {
+  from {
+    top: 30%;
+    left: 130%;
+  }
+  to {
+    top: 30%;
+    left: 85%;
+  }
+}
+
+@keyframes buttons-left {
+  from {
+    left: -8%;
+  }
+  to {
+    left: -30%;
+  }
+}
+
+@keyframes buttons-right {
+  from {
+    left: -8%;
+  }
+  to {
+    left: 130%;
+  }
+}
+
+@keyframes buttons-in-left {
+  from {
+    left: -30%;
+  }
+  to {
+    left: -8%;
+  }
+}
+
+@keyframes buttons-in-right {
+  from {
+    left: 130%;
+  }
+  to {
+    left: -8%;
+  }
+}
+
+/* Margins and Paddings */
+
+.the-clue-margine-right-330 {
+  margin-right: 330px;
+}
+
+.the-clue-margine-right-nav {
+  margin-right: 83px;
+}
+
+.the-clue-margine-left-90 {
+  margin-left: 90px;
+}
+
+.the-clue-margine-x-30 {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.margine-min-100 {
+  margin-top: -105px;
+}
+
+@media only screen and (max-width: 992px) {
+  .the-clue-hide-md {
+    display: none !important;
+  }
+
+  .the-clue-show-md {
+    display: block !important;
+  }
+}
+
+.the-clue-margine-top-glow-1 {
+  margin-top: 3rem;
+}
+
+.the-clue-margine-top-glow-2 {
+  margin-top: 1.8rem;
+}
+
+/* Absolute Positions */
+
+.the-clue-display-middle-slightly-left {
+  position: absolute;
+  top: 49%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.the-clue-display-bottom-kind-of-right {
+  position: absolute;
+  right: 250px;
+  bottom: -20px;
+}
+
+.the-clue-slider1-img-left {
+  position: absolute;
+  top: 47%;
+  left: 39.5%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.the-clue-slider1-img-left-small {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.the-clue-slider2-img-left {
+  position: absolute;
+  top: 44%;
+  left: 39.5%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.the-clue-slider1-img-off-left {
+  position: absolute;
+  top: 47%;
+  left: -30%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.the-clue-slider1-img-off-left-small {
+  position: absolute;
+  top: 50%;
+  left: -50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.the-clue-slider2-img-off-left {
+  position: absolute;
+  top: 44%;
+  left: -30%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.the-clue-slider1-img-off-right {
+  position: absolute;
+  top: 47%;
+  left: -130%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.the-clue-slider1-img-off-right-small {
+  position: absolute;
+  top: 50%;
+  left: -150%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.the-clue-slider2-img-off-right {
+  position: absolute;
+  top: 44%;
+  left: -130%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.the-clue-prv-nxt-buttons-left {
+  position: absolute;
+  left: -8%;
+  bottom: -6%;
+}
+
+.the-clue-prv-nxt-buttons-left-2 {
+  position: absolute;
+  left: 10%;
+  bottom: 30%;
+}
+
+.the-clue-prv-nxt-buttons-left-small {
+  position: absolute;
+  left: -8%;
+  bottom: -6%;
+}
+
+.the-clue-prv-nxt-buttons-left-small-2 {
+  position: absolute;
+  left: 10%;
+  bottom: 36.5%;
+}
+
+.the-clue-prv-nxt-buttons-off-left {
+  position: absolute;
+  left: -30%;
+  bottom: -6%;
+}
+
+.the-clue-prv-nxt-buttons-off-left-2 {
+  position: absolute;
+  left: -30%;
+  bottom: 30%;
+}
+
+.the-clue-prv-nxt-buttons-off-left-small {
+  position: absolute;
+  left: -50%;
+  bottom: -6%;
+}
+
+.the-clue-prv-nxt-buttons-off-left-small-2 {
+  position: absolute;
+  left: -30%;
+  bottom: 36.5%;
+}
+
+.the-clue-prv-nxt-buttons-off-right {
+  position: absolute;
+  left: 130%;
+  bottom: -6%;
+}
+
+.the-clue-prv-nxt-buttons-off-right-2 {
+  position: absolute;
+  left: 130%;
+  bottom: 30%;
+}
+
+.the-clue-prv-nxt-buttons-off-right-small {
+  position: absolute;
+  left: 150%;
+  bottom: -8%;
+}
+
+.the-clue-prv-nxt-buttons-off-right-small-2 {
+  position: absolute;
+  left: 130%;
+  bottom: 36.5%;
+}
+
+.the-clue-capture-slider1 {
+  position: absolute;
+  top: 30%;
+  left: 78%;
+}
+
+.the-clue-capture-slider1-small {
+  position: absolute;
+  top: -20%;
+  left: 30%;
+}
+
+.the-clue-capture-slider1-off-left {
+  position: absolute;
+  top: 30%;
+  left: -35%;
+}
+
+.the-clue-capture-slider1-off-left-small {
+  position: absolute;
+  top: -20%;
+  left: -55%;
+}
+
+.the-clue-capture-slider1-off-right {
+  position: absolute;
+  top: 30%;
+  left: -130%;
+}
+
+.the-clue-capture-slider1-off-right-small {
+  position: absolute;
+  top: -20%;
+  left: -150%;
+}
+
+.the-clue-capture-slider2 {
+  position: absolute;
+  top: 30%;
+  left: 85%;
+}
+
+.the-clue-capture-slider2-off-left {
+  position: absolute;
+  top: 30%;
+  left: -35%;
+}
+
+.the-clue-capture-slider2-off-right {
+  position: absolute;
+  top: 30%;
+  left: -130%;
+}
+
+.the-clue-division-slider-1-left {
+  position: absolute;
+  top: 59%;
+  left: 68%;
+}
+
+.the-clue-division-slider-1-left-small {
+  position: absolute;
+  top: 80%;
+  left: 70%;
+}
+
+.the-clue-division-slider-2-left {
+  position: absolute;
+  top: 55%;
+  left: 68%;
+}
+
+.text-slider1-slightly-left {
+  position: absolute;
+  top: 69%;
+  left: 68%;
+}
+
+.text-slider1-slightly-left-small {
+  position: absolute;
+  top: 80%;
+  left: 30%;
+}
+
+.text-slider2-slightly-left {
+  position: absolute;
+  top: 64.8%;
+  left: 68%;
+}
+
+.the-clue-grow-text-top-middle {
+  position: absolute;
+  left: 12%;
+  top: 14%;
+}
+
+.the-clue-grow-video-top-middle {
+  position: absolute;
+  top: 40%;
+  padding-left: 12%;
+  padding-right: 12%;
+}
+
+.the-clue-one {
+  position: absolute;
+  top: 40vh;
+  right: 10vw;
+}
+
+/* Whole Stylings */
+
+/* Top Section */
+
+.We-create-brands-that-stand-out-grow {
+  width: 960px;
+  height: 177px;
+  font-family: Montserrat;
+  font-size: 80px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 0.8px;
+  text-align: left;
+  color: #484848;
+}
+
+.BRAND-STRATEGY {
+  height: 97px;
+  font-family: Montserrat;
+  font-size: 38px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.53;
+  letter-spacing: 0.38px;
+  text-align: left;
+  color: #484848;
+}
+
+.the-clue-line-1 {
+  width: 70px;
+  height: 4px;
+  background-color: #484848;
+}
+
+.the-clue-line-2 {
+  width: 112px;
+  height: 1px;
+  background-color: #ffffff;
+}
+
+.the-clue-line-slider1 {
+  width: 48px;
+  height: 1px;
+  background-color: #000000;
+}
+
+.the-clue-freeconsultation-line {
+  width: 71px;
+  height: 1px;
+  background-color: #ffffff;
+}
+
+.EXPLORE {
+  width: 171px;
+  height: 21px;
+  font-family: Montserrat;
+  font-size: 31px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 0.81px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.Explore-Button {
+  width: 425px;
+  height: 76px;
+  background-color: #484848;
+}
+
+.PRV-NXT-Button {
+  width: 250px;
+  height: 70px;
+  background-color: #202020;
+}
+
+.PRV-NXT-Text {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.capture-slider1-light {
+  width: 500px;
+  height: 102px;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: 1px;
+  text-align: left;
+  color: #000000;
+}
+
+.capture-slider1-light .capture-slider1-bold {
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 1.25px;
+}
+
+.division-slider1 {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 0.4px;
+  color: #000000;
+}
+
+.slider1-text-each-frame {
+  width: 400px;
+  height: 220px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.56;
+  letter-spacing: 1.35px;
+  text-align: left;
+  color: #000000;
+}
+
+.slider-1-see-more-work {
+  width: 200px;
+  height: 27px;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.27;
+  letter-spacing: 1.65px;
+  text-align: left;
+  color: #000000;
+}
+
+/* Grow Section */
+
+.heading-grow-section {
+  font-family: Montserrat;
+  font-size: 42px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.19;
+  letter-spacing: 2.1px;
+  text-align: left;
+  color: #fcfcfc;
+}
+
+.main-text-grow-section {
+  width: 822.2px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.56;
+  letter-spacing: 1.35px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.learn-more-about-us {
+  height: 27px;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.27;
+  letter-spacing: 1.65px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.video-plaer-size {
+  width: 100%;
+}
+
+.video-plaer-size-width-height {
+  width: 100%;
+  height: 100%;
+}
+
+.Crafting-High-Impact-Brand-Design {
+  width: 520px;
+  height: 88px;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: 4px;
+  text-align: left;
+  color: #ffffff;
+}
+
+/* Nav Bar */
+
+.borderNavTop {
+  position: relative;
+}
+
+.borderNavTop:after {
+  padding: 0;
+  margin: 0;
+  display: block;
+  height: 1px;
+  content: "";
+  width: 45%;
+  background: white;
+  position: absolute;
+  right: 52%;
+  top: -1px;
+}
+
+.borderNavTop:hover:after {
+  padding: 0;
+  margin: 0;
+  display: block;
+  height: 1px;
+  content: "";
+  width: 45%;
+  background: transparent;
+  position: absolute;
+  right: 52%;
+  top: -1px;
+}
+
+.borderNavTop:before {
+  padding: 0;
+  margin: 0;
+  display: block;
+  content: "";
+  width: 45%;
+  height: 1px;
+  background: white;
+  position: absolute;
+  left: 52%;
+  bottom: -1px;
+}
+
+.borderNavTop:hover:before {
+  padding: 0;
+  margin: 0;
+  display: block;
+  content: "";
+  width: 45%;
+  height: 1px;
+  background: transparent;
+  position: absolute;
+  left: 52%;
+  bottom: -1px;
+}
+
+.borderNavTop-yellow {
+  position: relative;
+}
+
+.borderNavTop-yellow:after {
+  padding: 0;
+  margin: 0;
+  display: block;
+  height: 1px;
+  content: "";
+  width: 45%;
+  background: #fff000;
+  position: absolute;
+  right: 52%;
+  top: -1px;
+}
+
+.borderNavTop-yellow:hover:after {
+  padding: 0;
+  margin: 0;
+  display: block;
+  height: 1px;
+  content: "";
+  width: 45%;
+  background: transparent;
+  position: absolute;
+  right: 52%;
+  top: -1px;
+}
+
+.borderNavTop-yellow:before {
+  padding: 0;
+  margin: 0;
+  display: block;
+  content: "";
+  width: 45%;
+  height: 1px;
+  background: #fff000;
+  position: absolute;
+  left: 52%;
+  bottom: -1px;
+}
+
+.borderNavTop-yellow:hover:before {
+  padding: 0;
+  margin: 0;
+  display: block;
+  content: "";
+  width: 45%;
+  height: 1px;
+  background: transparent;
+  position: absolute;
+  left: 52%;
+  bottom: -1px;
+}
+
+.borderNavTop-gray {
+  position: relative;
+}
+
+.borderNavTop-gray:after {
+  padding: 0;
+  margin: 0;
+  display: block;
+  height: 1px;
+  content: "";
+  width: 45%;
+  background: #484848;
+  position: absolute;
+  right: 52%;
+  top: -1px;
+}
+
+.borderNavTop-gray:hover:after {
+  padding: 0;
+  margin: 0;
+  display: block;
+  height: 1px;
+  content: "";
+  width: 45%;
+  background: transparent;
+  position: absolute;
+  right: 52%;
+  top: -1px;
+}
+
+.borderNavTop-gray:before {
+  padding: 0;
+  margin: 0;
+  display: block;
+  content: "";
+  width: 45%;
+  height: 1px;
+  background: #484848;
+  position: absolute;
+  left: 52%;
+  bottom: -1px;
+}
+
+.borderNavTop-gray:hover:before {
+  padding: 0;
+  margin: 0;
+  display: block;
+  content: "";
+  width: 45%;
+  height: 1px;
+  background: transparent;
+  position: absolute;
+  left: 52%;
+  bottom: -1px;
+}
+
+.the-clue-border {
+  padding: 3px;
+  border: 1px solid transparent;
+}
+
+.the-clue-border:hover {
+  padding: 3px;
+  border: 1px solid white;
+}
+
+.the-clue-border-yellow {
+  padding: 3px;
+  border: 1px solid transparent;
+}
+
+.the-clue-border-yellow:hover {
+  padding: 3px;
+  border: 1px solid #fff000;
+}
+
+.the-clue-border-gray {
+  padding: 3px;
+  border: 1px solid transparent;
+}
+
+.the-clue-border-gray:hover {
+  padding: 3px;
+  border: 1px solid #484848;
+}
+
+@media only screen and (max-width: 991px) {
+  .the-clue-border-gray {
+    padding: 3px;
+    border: 1px solid #484848;
+  }
+}
+
+/* Footer */
+
+/* Section 1 */
+
+/* .the-clue-top-section-size {
+  height: 85vh;
+  min-height: 600px;
+} */
+
+/* .the-clue-top-section-size {
+
+} */
+
+@media only screen and (max-width: 992px) {
+  .transform-video-on-small-screen {
+    transform: scale(1.4);
+    height: 90vh;
+  }
+}
+
+.the-clue-top-section-size-small {
+  height: 65vh;
+  min-height: 400px;
+}
+
+.section1-cercles-positions {
+  top: 12vh;
+  left: 27vw;
+}
+
+.section1-cercles-positions-small {
+  top: 10vh;
+  left: 15vw;
+}
+
+.footer-section-1 {
+  height: 340px;
+  background-color: #343434;
+}
+
+.Start-run-and-grow-your-Brand-with-us {
+  font-family: Montserrat;
+  font-size: 62px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.13;
+  letter-spacing: 0.62px;
+  text-align: center;
+  color: #c1c1c1;
+}
+
+.Think-long-term-branding-results-are-never-immediate-Is-your {
+  width: 940px;
+  height: 73px;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.31;
+  letter-spacing: 0.32px;
+  text-align: center;
+  color: #c1c1c1;
+}
+
+/* Section 2 */
+
+.footerSection2 {
+  height: 193px;
+  background-color: #c1c1c1;
+}
+
+.free-30-minute-consultation {
+  width: 604px;
+  height: 41px;
+  font-family: Montserrat;
+  font-size: 42px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: 0.42px;
+  text-align: center;
+  color: #343434;
+}
+
+/* Section 3 */
+
+.footerSection3 {
+  height: 250px;
+  background-color: #ffffff;
+}
+
+.infotheclueagency {
+  width: 558px;
+  height: 50px;
+  font-family: Montserrat;
+  font-size: 42px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.38;
+  letter-spacing: 0.52px;
+  text-align: left;
+  color: #343434;
+}
+
+.Suite-1-Level-2-902-Mt-Alexander-Rd-Essendon-VIC-3040-Austr {
+  height: 93px;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.06;
+  letter-spacing: 0.32px;
+  text-align: left;
+  color: #343434;
+}
+
+/* Section 4 */
+
+.footerSection4 {
+  height: 85px;
+  background-color: #343434;
+}
+
+.copy-right-footer {
+  height: 19px;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.95;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #c1c1c1;
+}
+
+.copy-right-footer-hiden {
+  height: 19px;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.95;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: transparent;
+}
+
+/* Section One */
+
+.one {
+  font-family: Montserrat;
+  font-size: 15vw;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #c0c0c0;
+}
+
+.two {
+  font-family: Montserrat;
+  font-size: 15vw;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #c0c0c0;
+}
+
+.thr {
+  font-family: Montserrat;
+  font-size: 15vw;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #c0c0c0;
+}
+
+.one-small {
+  font-family: Montserrat;
+  font-size: 20vw;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #c0c0c0;
+}
+
+.two-small {
+  font-family: Montserrat;
+  font-size: 20vw;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #c0c0c0;
+}
+
+.thr-small {
+  font-family: Montserrat;
+  font-size: 20vw;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #c0c0c0;
+}
+
+.the-clue-section-one-size {
+  width: 1920px;
+  height: 1487px;
+}
+
+.the-clue-one-section-size-small {
+  height: 100vh;
+}
+
+.the-clue-one-section-size {
+  height: 100vh;
+  min-height: 900px;
+}
+
+.the-clue-strategy-section-size {
+  height: 150vh;
+  min-height: 600px;
+}
+
+/* Section Grow */
+
+.the-clue-grow-section-size {
+  height: 150vh;
+  min-height: 1000px;
+}
+
+.the-clue-grow-section-size-small {
+  height: 100vh;
+}
+
+.grow {
+  height: 226px;
+  font-family: Montserrat;
+  font-size: 15vw;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.6;
+  letter-spacing: normal;
+  text-align: left;
+  color: #adadad;
+}
+
+.strategy {
+  height: 226px;
+  font-family: Montserrat;
+  font-size: 15vw;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.6;
+  letter-spacing: normal;
+  text-align: left;
+  color: #c0c0c0;
+}

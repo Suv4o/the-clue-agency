@@ -1,0 +1,33 @@
+{
+  "name": "theclue",
+  "version": "1.0.0",
+  "description": "The Clue - What Makes You Different Makes You Successful",
+  "author": "Aleksandar Trpkovski",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.3.6",
+    "bootstrap": "^4.1.3",
+    "bootstrap-vue": "^2.0.0-rc.11",
+    "firebase": "^7.6.1",
+    "nuxt": "^2.0.0",
+    "nuxt-facebook-pixel-module": "^1.3.0",
+    "nuxt-fire": "^3.5.3",
+    "nuxt-validate": "^1.0.1",
+    "plyr": "^3.5.6",
+    "prismic-dom": "^2.1.0",
+    "prismic-javascript": "^2.1.5",
+    "vue": "^2.6.11",
+    "vue-check-view": "^0.3.0",
+    "vue-moment": "^4.1.0",
+    "vue-scrollto": "^2.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
