@@ -1,6 +1,6 @@
 <h1 align="center">TheClue Branding Agency</h1>
 <p align="center">
-Website: <a href="https://theclue.agency/">https://the-clue-bt.web.app/</a>
+Website: <a href="https://the-clue-bt.web.app/">https://theclue.agency/</a>
 </p>
 
 <p align="center">
